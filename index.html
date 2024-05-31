@@ -55,6 +55,10 @@
                 window.location.href = "https://play.google.com/store/apps/details?id=com.fashionfrenzy.glamorousquest&hl=en-US";
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 window.location.href = "https://apps.apple.com/hk/app/fashion-frenzy-swapifly/id6503195041";
+            } else if (/Macintosh|MacIntel|MacPPC|Mac68K/.test(userAgent)) {
+                window.location.href = "https://apps.apple.com/hk/app/fashion-frenzy-swapifly/id6503195041";
+            } else if (/Win32|Win64|Windows|WinCE/.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.fashionfrenzy.glamorousquest&hl=en-US";
             }
             alert(userAgent);
         });
